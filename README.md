@@ -1,2 +1,1 @@
-# CRUD
-Create, Read, Update, and Delete
+https://abdelghane3mar.github.io/CRUD/
