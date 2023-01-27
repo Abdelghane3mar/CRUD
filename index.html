@@ -1,0 +1,88 @@
+<html>
+
+        <head>
+            <link rel="stylesheet" href="CSS/bootstrap.min.css">
+            <link rel="stylesheet" href="CSS/Style.css">
+        </head>
+
+        <body>
+
+
+            <div class="container py-5 ">
+
+                <div class="form-group py-2">
+
+                    <label  class="mb-3" for="productNameInput">Product Name  :</label>
+                    <input  class="   form-control" type="text"  id="productNameInput">
+
+
+                </div>
+
+                <div class=" d-none  alert  alert-danger" id="userNameAlert" >
+                    <p>UserName Must Start UpperCase And Then From 3 to 8</p>
+                </div>
+
+
+                <div class="form-group py-2">
+
+                    <label  class="mb-3" for="productPriceInput">Product Price  :</label>
+                    <input  class="form-control" type="number"  id="productPriceInput">
+
+                </div>
+
+                <div class="form-group py-2">
+
+                    <label  class="mb-3" for="productCategoryInput">Product Category  :</label>
+                    <input  class="form-control" type="text"  id="productCategoryInput">
+
+                </div>
+
+                <div class="form-group  py-2">
+
+                    <label  class="mb-3" for="productDescInput">Product Desc  :</label>
+
+                    <textarea  class="form-control" type="text"  id="productDescInput"></textarea>
+
+
+                </div>
+                <button   id="mainBtn"  onclick=" addProduct() ;" class="btn btn-outline-info  mt-3" >Add Product</button>
+
+
+            </div>
+
+
+            <div class="container">
+
+                
+                <input  placeholder="Search Product"  onkeyup="searchProduct(this.value)"  class="form-control  w-75 m-auto " type="text">
+
+
+                <table  class="table mt-4 " >
+
+                    <thead>
+                        <th>index</th>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Product Category</th>
+                        <th>Product Desc</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </thead>
+
+                    <tbody  id="myProduct">
+
+                        
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <script  src="JS/Script.js" ></script>
+        </body>
+
+</html>
